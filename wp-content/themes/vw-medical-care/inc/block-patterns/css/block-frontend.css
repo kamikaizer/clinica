@@ -1,0 +1,102 @@
+/*----- Banner Section -----*/
+.banner-section{
+  width: auto;
+  height: auto;
+}
+.banner-section a.wp-block-button__link{
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+.banner-section a.wp-block-button__link:hover{
+  background: #2f3241 !important;
+}
+.banner-section a.wp-block-button__link:after{
+  content: "\f105";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  opacity: 0;
+}
+.banner-section a.wp-block-button__link:hover:after{
+  opacity: 1;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  padding-left: 10px;
+  color: #fff;
+}
+/*---- Contact Details -----*/
+.contact-details .address p, .contact-details h3, .contact-details .phone p, .contact-details .email p{
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff !important;
+}
+.contact-details .address, .contact-details .phone, .contact-details .email{
+  box-shadow: 0 4px 23px 2px rgb( 0, 0, 0, 0.2);
+}
+.contact-details .phone, .contact-details .email{
+  height: 150px;
+}
+.phone-head, .contact-details .address h3{
+  position: relative;
+}
+.phone-head:after, .contact-details .address h3:after{
+  content: "";
+  border-bottom: 4px solid #fff;
+  width: 15%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/*----- Facility Section ------*/
+.facility-section p{
+  text-align: center !important;
+}
+/*----- media css -----*/
+@media screen and (max-width: 768px) and (min-width: 576px){
+  .banner-section .banner-box {
+    flex-basis: 100% !important;
+  }
+  .contact-details .wp-block-column{
+    flex-basis: 33.33% !important;
+  }
+  .contact-details .phone .wp-block-column:nth-child(2), .contact-details .email .wp-block-column:nth-child(2){
+    flex-basis: 53.66% !important;
+  }
+  .facility-section .wp-block-column{
+    flex-basis: 30.33% !important;
+  }
+  .facility-section .wp-block-column:nth-child(2n){
+    margin: 0 20px;
+  }
+  .wp-block-columns.alignwide.contact-details {
+    flex-wrap: nowrap;
+  }
+  .wp-block-columns.alignwide.facility-section {
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (max-width: 575px){
+  .banner-section .banner-box p{
+    display: none;
+  }
+  .banner-section .banner-box h1{
+    font-size: 30px !important;
+  }
+  .contact-details .phone .wp-block-column:first-child, .contact-details .email .wp-block-column:first-child{
+    flex-basis: 33.33% !important;
+  }
+  .contact-details .phone .wp-block-column:nth-child(2), .contact-details .email .wp-block-column:nth-child(2){
+    flex-basis: 53.66% !important;
+    margin-left: 30px;
+  }
+  .contact-details .phone, .contact-details .email{
+    height: auto;
+  }
+}

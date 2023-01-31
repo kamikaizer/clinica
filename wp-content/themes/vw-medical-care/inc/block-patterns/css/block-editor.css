@@ -1,0 +1,58 @@
+/*----- Banner Section -----*/
+.banner-section h2, .facility-section h4{
+  font-family: 'PT Sans', sans-serif;
+}
+.banner-section .wp-block-button__link, .banner-section p, .contact-details h3, .contact-details p, .facility-section p{
+  font-family: 'Roboto', sans-serif;
+}
+.banner-section, .contact-details .wp-block-cover, .contact-details{
+  margin: 0;
+}
+.banner-section .block-editor-rich-text__editable.wp-block-button__link {
+  font-size: 15px;
+  font-weight: 600;
+}
+.banner-section .block-editor-rich-text__editable.wp-block-button__link:hover{
+  background: #2f3241 !important;
+}
+.banner-section .block-editor-rich-text__editable.wp-block-button__link:after{
+  content: "\f105";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  opacity: 0;
+}
+.banner-section .block-editor-rich-text__editable.wp-block-button__link:hover:after{
+  opacity: 1;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  padding-left: 10px;
+  color: #fff;
+}
+/*---- Contact Details -----*/
+.contact-details .address p, .contact-details h3, .contact-details .phone p, .contact-details .email p{
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff !important;
+}
+.contact-details .address, .contact-details .phone, .contact-details .email{
+  box-shadow: 0 4px 23px 2px rgb( 0, 0, 0, 0.2);
+}
+.contact-details .phone, .contact-details .email{
+  height: 180px;
+}
+.phone-head, .contact-details .address h3{
+  position: relative;
+}
+.phone-head:after, .contact-details .address h3:after{
+  content: "";
+  border-bottom: 4px solid #fff;
+  width: 15%;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 50% !important;
+  transform: translateX(-50%);
+}
